@@ -38,7 +38,12 @@ namespace BlogApp.API
 
             app.UseRouting();
             app.UseStatusCodePages();
-            
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute("default", "{controller=Product}/{action=Index}/{id?}");
+            });
+
         }
     }
 }
