@@ -1,10 +1,11 @@
-﻿using System;
+﻿using BlogApp.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Blog.DATA.Entities
+namespace BlogApp.DATA.Entities
 {
-    public class Blog
+    public class Blog : IEntity
     {
         public int BlogId { get; set; }
         public string BlogHeader { get; set; }

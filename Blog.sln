@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.API", "Blog.API\Blog.API.csproj", "{063D4609-66A9-475F-995D-212FAF44EC24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.DATA", "Blog.DATA\Blog.DATA.csproj", "{45276285-9E27-4460-B07E-6B871F8FD9A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.DATA", "Blog.DATA\Blog.DATA.csproj", "{45276285-9E27-4460-B07E-6B871F8FD9A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Core", "Blog.Core\Blog.Core.csproj", "{48C924B0-A61F-45A2-8590-6D6E57FB18DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Core", "Blog.Core\Blog.Core.csproj", "{48C924B0-A61F-45A2-8590-6D6E57FB18DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.DAL", "Blog.DAL\Blog.DAL.csproj", "{E6725B33-B7F6-491C-80DB-856E09C24B05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.DAL", "Blog.DAL\Blog.DAL.csproj", "{E6725B33-B7F6-491C-80DB-856E09C24B05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.BLL", "Blog.BLL\Blog.BLL.csproj", "{E9BE9F15-CE98-4235-BEA4-A2CD2FA72CAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E6725B33-B7F6-491C-80DB-856E09C24B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6725B33-B7F6-491C-80DB-856E09C24B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6725B33-B7F6-491C-80DB-856E09C24B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9BE9F15-CE98-4235-BEA4-A2CD2FA72CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9BE9F15-CE98-4235-BEA4-A2CD2FA72CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9BE9F15-CE98-4235-BEA4-A2CD2FA72CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9BE9F15-CE98-4235-BEA4-A2CD2FA72CAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

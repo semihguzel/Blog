@@ -18,8 +18,4 @@
     <ProjectReference Include="..\Blog.DATA\Blog.DATA.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Abstract\" />
-  </ItemGroup>
-
 </Project>

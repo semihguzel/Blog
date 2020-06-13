@@ -1,12 +1,12 @@
-﻿using Blog.Core.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using System.Linq;
+using BlogApp.Core.Entities;
 
-namespace Blog.Core.DAL.EntityFramework
+namespace BlogApp.Core.DAL.EntityFramework
 {
     public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepositoryBase<TEntity>
         where TEntity : class, IEntity, new()

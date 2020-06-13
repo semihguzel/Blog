@@ -1,14 +1,14 @@
-﻿using Blog.DATA.Entities;
+﻿using BlogApp.DATA.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Blog.DATA.Mappings
+namespace BlogApp.DATA.Mappings
 {
-    public class BlogMapping : IEntityTypeConfiguration<Blog.DATA.Entities.Blog>
+    public class BlogMapping : IEntityTypeConfiguration<Blog>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Blog.DATA.Entities.Blog> builder)
+        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Blog> builder)
         {
             builder.ToTable("Blog");
 

@@ -1,10 +1,10 @@
-﻿using Blog.Core.Entities;
+﻿using BlogApp.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace Blog.Core.DAL
+namespace BlogApp.Core.DAL
 {
     public interface IEntityRepositoryBase<T> where T : class, IEntity, new()
     {
