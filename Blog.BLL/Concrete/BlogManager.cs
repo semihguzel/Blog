@@ -3,6 +3,7 @@ using BlogApp.DAL.Abstract;
 using BlogApp.DATA.Entities;
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace BlogApp.BLL.Concrete
@@ -23,6 +24,11 @@ namespace BlogApp.BLL.Concrete
         public void Delete(Blog blog)
         {
             _blogDal.Delete(blog);
+        }
+
+        public void Delete(int blogId)
+        {
+            _blogDal.Delete(GetById(blogId));
         }
 
         public List<Blog> GetAll()

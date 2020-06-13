@@ -12,5 +12,6 @@ namespace BlogApp.BLL.Abstract
         void Add(Blog blog);
         void Update(Blog blog);
         void Delete(Blog blog);
+        void Delete(int blogId);
     }
 }
