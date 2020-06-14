@@ -12,3 +12,6 @@ EntityFramework ile geliştirdiğim birçok proje mevcut. Genel olarak Code Firs
 
 Proje içerisinde kullanıcı girişi eklenebilirdi. Identity kütüphanesi ile kullanıcı işlemlerinin güvenli bir şekilde yapılabildiği bir yapı kurulabilirdi.
 
+## Proje Açıklamaları
+
+Veritabanı script'i BlogDb adında eklenmiştir. Veritabanı bağlantısının yapılabilmesi için, appsettings.json içerisindeki connectionString'in değiştirilmesi yeterlidir.
