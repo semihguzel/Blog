@@ -1,6 +1,6 @@
 ## Projede kullanıdığınız tasarım desenleri hangileridir? Bu desenleri neden kullandınız? 
 
-Proje içerisinde Generic Repository Design Pattern kullandım. Bu proje içerisinde tek bir entity nesnesi kullandım fakat projenin sonraki süreçlerde eklenebilecek olan entity'ler için kod tekrarı yapılmaması için bu deseni kullandım.
+Proje içerisinde Generic Repository Design Pattern kullandım. Projede sadece Blog nesnesi kullandım fakat projenin sonraki süreçlerinde eklenebilecek olan farklı entity'ler için kod tekrarını önlemek amacıyla bu tasarım kalıbını kullandım.
 
 ## Kullandığınız teknoloji ve kütüphaneler hakkında daha önce tecrübeniz oldu mu? Tek tek yazabilir misiniz? 
 
