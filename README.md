@@ -15,3 +15,5 @@ Proje içerisinde kullanıcı girişi eklenebilirdi. Identity kütüphanesi ile 
 ## Proje Açıklamaları
 
 Veritabanı script'i BlogDb adında eklenmiştir. Veritabanı bağlantısının yapılabilmesi için, appsettings.json içerisindeki connectionString'in değiştirilmesi yeterlidir.
+
+Github Link: https://github.com/semihguzel/Blog
