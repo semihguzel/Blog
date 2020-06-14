@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using BlogApp.DATA.Entities;
 using BlogApp.DATA.Mappings;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace BlogApp.DAL.Concrete
 {
@@ -11,7 +14,12 @@ namespace BlogApp.DAL.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server = .; Database = Blog; uid = sa; pwd = 1234");
+            IConfigurationRoot configurationBuilder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .Build();
+
+            optionsBuilder.UseSqlServer(configurationBuilder.GetConnectionString("DefaultConnection"));
         }
 
         public DbSet<Blog> Blogs { get; set; }
