@@ -31,8 +31,14 @@ namespace BlogApp.API.Controllers
             return _blogService.GetAll();
         }
 
+        [HttpPost("{action}")]
+        public void Add(Blog blog)
+        {
+            _blogService.Add(blog);
+        }
+
         [HttpPost]
-        public void Update([FromBody] Blog blog)
+        public void Update(Blog blog)
         {
             _blogService.Update(blog);
         }
@@ -41,6 +47,12 @@ namespace BlogApp.API.Controllers
         public void Delete(int id)
         {
             _blogService.Delete(id);
+        }
+
+        [HttpGet("{action}")]
+        public IEnumerable<Blog> SearchByBlogHeader(string blogHeader)
+        {
+            return _blogService.SearchByBlogHeader(blogHeader);
         }
     }
 }

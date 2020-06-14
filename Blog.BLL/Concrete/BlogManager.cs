@@ -43,7 +43,10 @@ namespace BlogApp.BLL.Concrete
 
         public List<Blog> SearchByBlogHeader(string blogHeader)
         {
-            return _blogDal.SearchBlogsByHeader(blogHeader);
+            if (string.IsNullOrWhiteSpace(blogHeader))
+                return GetAll();
+            else
+                return _blogDal.SearchBlogsByHeader(blogHeader);
         }
 
         public void Update(Blog blog)
