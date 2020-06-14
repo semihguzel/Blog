@@ -41,6 +41,11 @@ namespace BlogApp.BLL.Concrete
             return _blogDal.Get(x => x.BlogId == blogId);
         }
 
+        public List<Blog> SearchByBlogHeader(string blogHeader)
+        {
+            return _blogDal.SearchBlogsByHeader(blogHeader);
+        }
+
         public void Update(Blog blog)
         {
             _blogDal.Update(blog);

@@ -13,5 +13,6 @@ namespace BlogApp.BLL.Abstract
         void Update(Blog blog);
         void Delete(Blog blog);
         void Delete(int blogId);
+        List<Blog> SearchByBlogHeader(string blogHeader);
     }
 }

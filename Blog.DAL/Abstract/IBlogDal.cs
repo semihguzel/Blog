@@ -8,5 +8,6 @@ namespace BlogApp.DAL.Abstract
 {
     public interface IBlogDal : IEntityRepositoryBase<Blog>
     {
+        List<Blog> SearchBlogsByHeader(string blogHeaderText);
     }
 }
